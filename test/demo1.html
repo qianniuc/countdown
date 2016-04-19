@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js倒计时插件测试</title>
+</head>
+<body>	
+	<h3>倒计时：</h3>
+	<h3 id="countdown1"></h3>
+	<h3 id="countdown2"></h3>	
+</body>
+<script type="text/javascript" src="../src/countdown.js"></script>
+<script type="text/javascript">
+	new Countdown(document.getElementById('countdown1'),{
+		format: "hh小时mm分ss秒",
+    	lastTime: "2017-04-20 16:00:00"
+	});
+	new Countdown(document.getElementById('countdown2'),{
+		format: "hh:mm:ss",
+    	lastTime: 1492675200000
+	});	
+</script>
+</html>
