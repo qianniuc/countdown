@@ -1,5 +1,5 @@
 # Countdown
-js倒计时插件，无需依赖jquery，zepto等，适合简易页面，节省资源
+js倒计时插件，无需依赖jquery，zepto等，适合简易页面，节省资源，**支持模块化**
 ### 使用方法
 ```js
 new Countdown(el, options);
