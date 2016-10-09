@@ -1,0 +1,21 @@
+{
+  "name": "js-countdown",
+  "version": "0.2.0",
+  "description": "Javascript countdown plugin",
+  "main": "src/countdown.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qianniuc/countdown.git"
+  },
+  "keywords": [
+    "countdown",
+    "js-countdown",
+    "Countdown"
+  ],
+  "author": "Ben.Luo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qianniuc/countdown/issues"
+  },
+  "homepage": "https://github.com/qianniuc/countdown#readme"
+}

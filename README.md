@@ -23,5 +23,9 @@ new Countdown(document.getElementById('countdown1'),{
 ```
 format:可以自定义输出格式  
 lastTime: 倒计时截止的时间
+### 使用NPM安装
+```
+npm install js-countdown --save-dev
+```
 ### License
 [MIT](https://opensource.org/licenses/MIT)

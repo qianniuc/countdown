@@ -1,6 +1,23 @@
-/*Countdown 0.1.0*/
+/*
+Countdown 
+version: 0.1.0
+author: Ben.Luo
+repository: https://github.com/qianniuc/countdown
+license: MIT
+*/
 
-;(function (window) {
+;(function(root, factory) {
+	 if (typeof define === 'function' && define.amd) {
+        // AMD
+        define(factory);
+    } else if (typeof exports === 'object') {
+        // CMD
+        module.exports = factory();
+    } else {
+        // 浏览器全局变量
+        root.Countdown = factory();
+    }
+})(this, function () {
 
 	function diffTime (lastTime) {
 		var nowTime = new Date().getTime();
@@ -17,7 +34,7 @@
 
     	var defaults = {
 			format: "hh:mm:ss",
-			lastTime: "2016-04-20"
+			lastTime: "2017-04-20"
 		};
 		
 		for (var option in options) {
@@ -51,6 +68,6 @@
 		this.init();
     }
 
-    window.Countdown = Countdown;
+    return Countdown;
 
-})(window);
+});
